@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form>
+            <div class="input-form">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="login-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your full name" class="input-field" required>
+                    </div>
+                    <div class="login-input">
+                        <label for="">Phone Number:</label>
+                        <input type="tel" placeholder="Enter your phone number" class="input-field" required>
+                    </div>
+                    <div class="login-input">
+                        <label for="">Email:</label>
+                        <input type="email" placeholder="Enter your email" class="input-field" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Qualification</legend>
+                    <div class="login-input">
+                        <label for="">Education:</label>
+                        <textarea placeholder="Enter your education details" cols="20" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <div class="login-input">
+                        <label for="">Work Experience:</label>
+                        <textarea placeholder="Enter your work experience" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <div class="login-input">
+                        <div class="skills">
+                            <label for="">Skills</label>
+                            <input type="text" placeholder="enter your skills">
+                            <input type="text" placeholder="enter your skills">
+                            <input type="text" placeholder="enter your skills">
+                            <input type="text" placeholder="enter your skills">
+                            <div id="addMoreSkills" class="hidden">
+                                <input type="text" placeholder="enter your skills">
+                                <input type="text" placeholder="enter your skills">
+                            </div>
+                            <button id="addMoreSkillsBtn">Add More Skills</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="generate-resume">
+                    <input type="button" value="Generate Resume">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

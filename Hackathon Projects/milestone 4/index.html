@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <div class="input-form">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="login-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your full name" class="input-field" required autocomplete="">
+                    </div>
+                    <div class="login-input">
+                        <label for="name">Date Of Birth:</label>
+                        <input type="date" id="Dateofbirth" required autocomplete="">
+                    </div>
+                    
+                    <div class="login-input">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" placeholder="Enter your phone number" class="input-field" required>
+                    </div>
+                    <div class="login-input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" class="input-field" required>
+                    </div>
+                    <div class="login-input">
+                        <label for="userImage">Picture</label>
+                    <input type="file" id="userImage" accept="image/*">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Qualification</legend>
+                    <div class="login-input">
+                        <label for="institude">Institude Name:</label>
+                        <input id="institude" type="text"  placeholder="Enter your institude name" required>
+                        <label for="degree">Degree:</label>
+                        <input id="degree" type="text"  placeholder="Enter your degree name" required>
+                        <label for="passing-year">Passing Year:</label>
+                        <input id="passing-year" type="text"  placeholder="Enter passing year" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <div class="login-input">
+                        <label for="work">Work Experience:</label>
+                        <textarea id="work" placeholder="Enter your work experience" required rows="4" ></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills:</legend>
+                    <div class="login-input">
+                        <div id="skills" >
+                            <label for="">Skills</label>
+                            <input id="skills1" type="text" placeholder="enter your skills">
+                            <input id="skills2" type="text" placeholder="enter your skills">
+                            <input id="skills3" type="text" placeholder="enter your skills">
+                            <input id="skills4"  type="text" placeholder="enter your skills">
+                            <div id="addMoreSkills" class="hidden">
+                                <input id="skills5" type="text" placeholder="enter your skills">
+                                <input id="skills6" type="text" placeholder="enter your skills">
+                            </div>
+                            <button id="addMoreSkillsBtn">Add More Skills</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="generateResumeBtn">Generate Resume</button>
+            </div>
+        </form>
+        
+            <div id="resume-content"></div>
+        
+            
+    </div>
+    <h1 contenteditable="true" class="hidden">This is an editable heading</h1>
+    <p contenteditable="true" class="hidden">You can edit this paragraph by clicking and typing directly in the browser.</p>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
