@@ -107,8 +107,6 @@ resumeForm.addEventListener("submit", (event: Event) => {
   }
 
 
-  clickbutton.appendChild(download); // Append download button to the click button container
-
   const shareLINK = document.getElementById("generate-link-btn") as HTMLElement;
   shareLINK.addEventListener("click", async () => {
     try {
